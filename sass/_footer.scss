@@ -1,45 +1,38 @@
 footer {
     margin-top: 50px;
-
-    svg {
-        margin: 10px 5px 10px 5px;
+}
+footer svg {
+    margin: 10px 5px 10px 5px;
+}
+footer .atencioncomercial {
+    grid-area: atencioncomercial;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    footer .atencincomercial {
+    text-align: left;
     }
-
-    .datosFooter {
-        grid-area: datosFooter;
-        text-align: center;
-
-        @media(min-width:768px) {
-            text-align: left;
-        }
-
-        @media(min-width:1024px) {
-            text-align: left;
-        }
+}
+@media (min-width: 1024px) {
+    footer .atencioncomercial {
+    text-align: left;
     }
-
-    .iconosRedes {
-        grid-area: iconosRedes;
+}
+footer .imagenesredes {
+    grid-area: imagenredes;
+}
+footer .confidencial {
+    grid-area: confidencial;
+}
+@media (min-width: 768px) {
+    footer .partefooter {
+    display: grid;
+grid-template-areas: "atencioncomercial imagenredes" "atencioncomercial confidencial";
     }
-
-    .copyright {
-        grid-area: copyright;
-    }
-
-    @media(min-width:768px) {
-        .grillaFooter {
-            display: grid;
-            grid-template-areas:
-                "datosFooter iconosRedes"
-                "datosFooter copyright";
-        }
-    }
-
-    @media(min-width:1024px) {
-        .grillaFooter {
-            display: grid;
-            grid-template-areas:
-                "datosFooter iconosRedes copyright";
-        }
+}
+@media (min-width: 1024px) {
+footer .partefooter {
+display: grid;
+grid-template-areas: "atencioncomercial imagenredes confidencial";
     }
 }

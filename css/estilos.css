@@ -146,13 +146,13 @@ footer .confidencial {
   grid-area: confidencial;
 }
 @media (min-width: 768px) {
-  footer .grillaFooter {
+  footer .partefooter {
     display: grid;
     grid-template-areas: "atencioncomercial imagenredes" "atencioncomercial confidencial";
   }
 }
 @media (min-width: 1024px) {
-  footer .grillaFooter {
+  footer .partefooter {
     display: grid;
     grid-template-areas: "atencioncomercial imagenredes confidencial";
   }
